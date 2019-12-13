@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <title>UUMS</title>
+    <style>
+      .loading-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        margin-left: -50px;
+        font-size: 16px;
+        text-align: center;
+      }
+      .loading {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        border: 2px solid #0045AD;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: loading-rotate 1s linear infinite;
+        animation: loading-rotate 1s linear infinite;
+      }
+
+      @-webkit-keyframes loading-rotate{
+        100%{
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg)
+        }
+      }
+      @keyframes loading-rotate{
+        100%{
+          -webkit-transform: rotate(360deg);
+          transform:rotate(360deg)
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but UUMS doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <div class="loading-box">
+        <div class="loading"></div>
+        <p>系统载入中</p>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
